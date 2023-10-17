@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<configuration xmlns="urn:activemq"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="urn:activemq /schema/artemis-configuration.xsd">
+    <core xmlns="urn:activemq:core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:activemq:core ">
+        <journal-pool-files>10</journal-pool-files>
+        <acceptors>
+            <acceptor name="artemis">tcp://0.0.0.0:61616?protocols=CORE;sslEnabled=true;keyStorePath=/server-keystore.jks;keyStorePassword=securepass</acceptor>
+        </acceptors>
+    </core>
+</configuration>

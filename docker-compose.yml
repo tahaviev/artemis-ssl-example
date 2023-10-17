@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  artemis:
+    image: apache/activemq-artemis
+    ports:
+      - "61616:61616"
+    volumes:
+      - ./broker.xml:/var/lib/artemis-instance/etc-override/broker.xml
+      - ./server-keystore.jks:/server-keystore.jks
